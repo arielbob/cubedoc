@@ -22,7 +22,7 @@
   transition: transform 1s ease-out;
   a,
   a:visited {
-    color: $nav-font-color;
+    color: $text-black;
     text-decoration: none;
   }
   &:hover {
@@ -44,13 +44,13 @@ nav {
         padding: 0 $gutter;
         line-height: $nav-height;
         height: $nav-height;
-        color: $nav-font-color;
+        color: $text-black;
         text-decoration: none;
         box-sizing: border-box;
         transition: border 0.1s $losi;
         &:hover { //0-0-5
           border-bottom: 3px solid $main-red;
-          color: $nav-font-color;
+          color: $text-black;
         }
         &:not(:only-child):after {
           padding-left: 4px;
@@ -122,7 +122,6 @@ nav {
 
 //TODO: separate this media query for each selector and move them close to normal styles
 @media only screen and (max-width: $breakpoint) {
-// Insert all mobile styles here
   .navigation {
     margin-top: 0;
   }
@@ -157,13 +156,14 @@ nav {
           padding-left: 30px;
         }
       }
-      .btn-container {
+      .learn-container {
         width: 100%;
         padding: 0;
         .btn-main {
           margin: 0;
           border-radius: 0;
           background-color: $main-red;
+          border-color: $main-red !important;
           color: $nav-background;
         }
       }
@@ -184,7 +184,7 @@ nav {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: $nav-font-color;
+    background: $text-black;
     position: absolute;
     display: block;
     content: '';
