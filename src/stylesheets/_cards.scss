@@ -1,7 +1,13 @@
+//TODO: maybe rename these classes so that the type is the first word
+//ex: card-main and card-step instead of main-card or step-card
+//i.e. same format as the button classes
+//TODO: replace $nav-background with $white
+//TODO: figure out how to organize css better
+
 .main-card {
   overflow: hidden;
   height: $card-height;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 $card-border-radius $card-border-radius;
   margin-bottom: 40px;
   transition: all 0.4s $losi;
   &.red {
@@ -153,6 +159,33 @@
           height: 40px;
         }
       }
+    }
+  }
+}
+
+.instructions {
+  margin-top: $instructions-margin;
+}
+
+.step-card {
+  padding: $card-gutter;
+  border-top: 3px solid #000000;
+  border-radius: 0 0 $card-border-radius $card-border-radius;
+  background-color: $nav-background;
+  h3 {
+    margin-top: 0;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.instructions-3x3 {
+  .step-card {
+    border-color: $main-red;
+    h3 {
+      color: $main-red;
+      text-transform: uppercase;
     }
   }
 }

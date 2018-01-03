@@ -98,3 +98,8 @@ button {
     margin: 0;
   }
 }
+
+.text-warning {
+  background-color: $warning-background;
+  padding: $text-box-padding;
+}
