@@ -1,0 +1,158 @@
+.main-card {
+  overflow: hidden;
+  height: $card-height;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 40px;
+  transition: all 0.4s $losi;
+  &.red {
+    .main-label {
+      background-color: $main-red;
+    }
+    .content {
+      border-color: $main-red;
+      .content-inner {
+        a { //0-4-1
+          color: $main-red;
+          &:hover {
+            // color: $link-blue;
+          }
+        }
+      }
+    }
+  } // these color styles should come before default styles bc. of equal specificity w/ a:hover styles
+  &.blue {
+    .main-label {
+      background-color: $main-blue;
+    }
+    .content {
+      border-color: $main-blue;
+      .content-inner {
+        a {
+          color: $main-blue;
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 10px 0 rgba(#000000, 0.06);
+  }
+  .main-label {
+    overflow: hidden;
+    float: left;
+    width: 300px;
+    height: 100%;
+    // margin-top: $card-gutter;
+    .main-title {
+      position: relative;
+      line-height: 0.8;
+      top: 20px;
+      left: 60px;
+      margin: 0;
+      color: #ffffff;
+      font-size: 160px;
+    }
+  }
+  .content {
+    display: flex;
+    min-height: 100%;
+    padding: $card-gutter;
+    // border-top: 3px solid;
+    border-bottom: 3px solid #000000;
+    background-color: #ffffff;
+    p {
+      margin-top: 0;
+    }
+    .content-inner {
+      flex-basis: 0;
+      flex-grow: 1;
+      &:not(:last-of-type) {
+        padding-right: $card-gutter;
+      }
+      a {
+        display: inline-block;
+        margin-bottom: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.1s $losi;
+        position: relative;
+        z-index: 0;
+        span {
+          transition: all 0.1s $losi;
+        }
+        .arrow {
+          margin-left: 10px;
+        }
+        .underline {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 10px;
+          background-color: rgba(#ffe38f, 0.27);
+          opacity: 1;
+          z-index: -1;
+          transition: all 0.2s $losi;
+        }
+        &:hover { // 0-4-1
+          // color: $link-blue;
+          &:not(span) {
+            transform: translateX(2px);
+          }
+          .arrow {
+            margin-left: 20px;
+          }
+          .underline {
+            opacity: 0;
+          }
+        }
+      }
+      .btn-main {
+        width: 130px;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-card, .main-card .main-label, .main-card .content {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .main-card {
+    height: auto;
+    min-height: 0;
+    margin-bottom: $gutter;
+    .main-label {
+      width: 100%;
+      height: 120px;
+      .main-title {
+        text-align: right;
+        top: 0;
+        left: auto;
+      }
+    }
+    .content {
+      flex-direction: column;
+      height: auto;
+      border-top: none;
+      .content-inner:not(:last-child) {
+        margin-bottom: $gutter;
+        padding: 0;
+      }
+      .content-inner {
+        .btn-main {
+          width: 100%;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

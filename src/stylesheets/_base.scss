@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: $body-background;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  color: $text-black;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  margin: $gutter auto;
+  padding: 0 $gutter;
+  width: $content-width;
+  &.bleed-top {
+    margin-top: 0;
+  }
+}
+
+//TODO: maybe switch these to min-width and swap mobile/web styles to fir the standard of mobile first styling
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .container {
+    width: 100%;
+  }
+}
+
+.btn-main {
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 1px 6px;
+  background: none;
+  border: 3px solid $text-black;
+  border-radius: 20px;
+  line-height: 25px;
+  transition: all 0.3s ease                     !important;
+  transition-property: background-color, color  !important;
+  &.red { //0-2-0
+    border-color: $main-red !important;
+    color: $main-red        !important;
+    &:hover {
+      background-color: $main-red;
+    }
+  }
+  &.blue {
+    border-color: $main-blue  !important;
+    color: $main-blue         !important;
+    &:hover {
+      background-color: $main-blue;
+    }
+  }
+  &:hover { //0-2-0
+    background-color: $text-black;
+    color: $nav-background        !important;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  .logo {
+    font-size: 4em;
+    margin: 0;
+  }
+  .slogan {
+    margin: 0;
+  }
+}

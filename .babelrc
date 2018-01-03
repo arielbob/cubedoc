@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    ["lodash", { "id": ["lodash", "semantic-ui-react"] }],
+    "react-hot-loader/babel"
+  ],
+  "presets": [
+    ["env", { "modules": false }],
+    "react"
+  ]
+}
