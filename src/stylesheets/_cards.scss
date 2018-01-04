@@ -173,10 +173,11 @@
 }
 
 .step-card {
-  padding: $card-gutter;
-  border-top: 3px solid #000000;
-  border-radius: 0 0 $card-border-radius $card-border-radius;
   background-color: $nav-background;
+  border-radius: 0 0 $card-border-radius $card-border-radius;
+  border-top: 3px solid #000000;
+  flex-grow: 1;
+  padding: $card-gutter;
   h3 {
     margin-top: 0;
   }

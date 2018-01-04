@@ -7,10 +7,10 @@ class Solve3x3 extends React.Component {
         <h1 className='title-big'>3x3</h1>
         <h2 className='article-name'>How to Solve</h2>
         <section className='instructions instructions-3x3'>
-          <section className='step1'>
+          <section className='step step1'>
             <section className='card step-card'>
               <h3>Notation</h3>
-              <p>Solving a Rubik’s cube involves using algorithms, which are sets of moves to accomplish a task. Rubik’s cube algorithms use the following notation:</p>
+              <p>Solving a Rubik's cube involves using algorithms, which are sets of moves to accomplish a task. Rubik's cube algorithms use the following notation:</p>
               <ul>
                 <li>U: Rotate the top layer clockwise</li>
                 <li>D: Rotate the bottom layer clockwise</li>
@@ -51,6 +51,16 @@ class Solve3x3 extends React.Component {
                   <span className='caption'>B</span>
                 </div>
               </div>
+            </section>
+          </section>
+          <section className='step step2'>
+            <div className='card img-card'>
+              <span className='caption'>Solved Cross</span>
+            </div>
+            <section className='card step-card'>
+              <h3>The Cross</h3>
+              <p>The first step of solving the Rubik's cube is to solve the cross. This step is very intuitive and gets easier when it is practiced. In this tutorial, we solve a white cross, but the cross can be any colour. The non-white side of the edge pieces must all align with its corresponding center piece.</p>
+              <p className='text-warning'>The center pieces of the Rubik's cube will never move. Blue will always be opposite from green, red will always be opposite from orange, and yellow with white.</p>
             </section>
           </section>
         </section>
