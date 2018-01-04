@@ -103,7 +103,6 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  background: $nav-background;
   height: $nav-height;
   width: $nav-height;
 }
@@ -123,6 +122,7 @@ nav {
 //TODO: separate this media query for each selector and move them close to normal styles
 @media only screen and (max-width: $breakpoint) {
   .navigation {
+    border-radius: 0;
     margin-top: 0;
   }
 
