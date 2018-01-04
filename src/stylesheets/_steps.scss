@@ -1,5 +1,15 @@
 .step1 {
+  display: flex;
   .step-card {
-    width: 400px;
+    min-width: 380px;
+    flex-basis: 0;
+    flex-grow: 2;
+  }
+  .diagrams-notation {
+    flex-basis: 0;
+    flex-grow: 3;
+    .img-card {
+      height: 220px;
+    }
   }
 }

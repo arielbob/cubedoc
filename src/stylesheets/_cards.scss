@@ -4,6 +4,10 @@
 //TODO: replace $nav-background with $white
 //TODO: figure out how to organize css better
 
+.card:not(:last-child) {
+  margin-right: $gutter;
+}
+
 .main-card {
   overflow: hidden;
   height: $card-height;
@@ -125,7 +129,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: $breakpoint-lg) {
   .main-card, .main-card .main-label, .main-card .content {
     height: 250px;
   }
@@ -165,7 +169,7 @@
 }
 
 .instructions {
-  margin-top: $instructions-margin;
+  margin-top: $content-margin;
 }
 
 .step-card {
@@ -178,6 +182,24 @@
   }
   :last-child {
     margin-bottom: 0;
+  }
+}
+
+.img-card {
+  background-color: $nav-background;
+  border-radius: $card-border-radius;
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+  height: 100px;
+  .caption {
+    align-self: flex-end;
+    background-color: $main-red;
+    color: $nav-background;
+    flex-grow: 1;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
   }
 }
 

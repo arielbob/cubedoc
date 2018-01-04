@@ -8,7 +8,7 @@ class Solve3x3 extends React.Component {
         <h2 className='article-name'>How to Solve</h2>
         <section className='instructions instructions-3x3'>
           <section className='step1'>
-            <section className='step-card'>
+            <section className='card step-card'>
               <h3>Notation</h3>
               <p>Solving a Rubik’s cube involves using algorithms, which are sets of moves to accomplish a task. Rubik’s cube algorithms use the following notation:</p>
               <ul>
@@ -27,6 +27,30 @@ class Solve3x3 extends React.Component {
                 <li>R U R' U R U2 R'</li>
                 <li>F R U' R' U' R U R' F' R U R' U' R' F R F'</li>
               </ul>
+            </section>
+            <section className='diagrams-notation'>
+              <div className='row'>
+                <div className='card img-card'>
+                  <span className='caption'>U</span>
+                </div>
+                <div className='card img-card'>
+                  <span className='caption'>L</span>
+                </div>
+                <div className='card img-card'>
+                  <span className='caption'>F</span>
+                </div>
+              </div>
+              <div className='row'>
+                <div className='card img-card'>
+                  <span className='caption'>D</span>
+                </div>
+                <div className='card img-card'>
+                  <span className='caption'>R</span>
+                </div>
+                <div className='card img-card'>
+                  <span className='caption'>B</span>
+                </div>
+              </div>
             </section>
           </section>
         </section>
