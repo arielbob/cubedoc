@@ -6,7 +6,6 @@
     flex-grow: 2;
   }
   .diagrams-notation {
-    flex-basis: 0;
     flex-grow: 3;
     .img-card {
       height: 220px;
@@ -21,6 +20,21 @@
       margin-bottom: $gutter;
       min-width: auto;
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .step1 {
+    .diagrams-notation {
+      overflow-x: scroll;
+      display: flex;
+      .row {
+        margin: auto $gutter $gutter auto;
+        .img-card {
+          min-width: 200px;
+        }
+      }
     }
   }
 }
