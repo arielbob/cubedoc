@@ -13,3 +13,14 @@
     }
   }
 }
+
+@media only screen and (max-width: $breakpoint-lg) {
+  .step1 {
+    flex-direction: column;
+    .step-card {
+      margin-bottom: $gutter;
+      min-width: auto;
+      width: 100%;
+    }
+  }
+}
