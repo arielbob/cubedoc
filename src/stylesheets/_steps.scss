@@ -8,7 +8,7 @@
     flex-direction: column;
     .step-card {
       margin-bottom: $gutter;
-      min-width: auto;
+      min-width: auto !important;
       width: 100%;
     }
   }
