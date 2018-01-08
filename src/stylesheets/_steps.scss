@@ -11,7 +11,7 @@
 //TODO: refactor steps so that we have a class for left and right sections
 //instead of using both section and .card for multiple things
 .step {
-  align-items:flex-start;
+  align-items: flex-start;
   display: flex;
   margin-top: $content-margin;
   section, .card {
@@ -24,6 +24,7 @@
 
 @media only screen and (max-width: $breakpoint-lg) {
   .step {
+    align-items: stretch;
     flex-direction: column;
     .step-card, .img-card {
       max-width: none !important;
@@ -40,7 +41,6 @@
     max-width: 380px;
   }
 }
-
 
 @media only screen and (max-width: $breakpoint) {
   .step1 {
