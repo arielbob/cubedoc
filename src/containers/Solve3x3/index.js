@@ -63,6 +63,36 @@ class Solve3x3 extends React.Component {
               <p className='text-warning'>The center pieces of the Rubik's cube will never move. Blue will always be opposite from green, red will always be opposite from orange, and yellow with white.</p>
             </section>
           </section>
+          <section className='step step3'>
+            <section className='card step-card'>
+              <h3>Finishing the First Layer</h3>
+              <p>Now, the corners of the first layer must be placed in their correct positions. Start by rotating the cube so that the cross is on the bottom. Next, position one of the four corners that has a white piece above its correct position. The corner can be inserted by doing the algorithm:</p>
+              <ul>
+                <li>U' L' U L</li>
+              </ul>
+              <p>If the corner is not inserted correctly the first time the algorithm is done, keep repeating it until it is inserted. This algorithm will also solve the case if the corner is inserted incorrectly in its position.</p>
+              <p>Repeat this for the other three corners.</p>
+              <div className='text-warning'>
+                <p>The algorithm above works when the corner is to the left of your front face, if it is to the right of your front face, you can use this algorithm:</p>
+                <ul>
+                  <li>U R U' R'</li>
+                </ul>
+              </div>
+            </section>
+            <section className='diagrams-first-layer'>
+              <div className='img-card solved-first-layer'>
+                <span className='caption'>Solved First Layer</span>
+              </div>
+              <section className='diagrams-corners'>
+                <div className='card img-card'>
+                  <span className='caption'>Corner Above Position</span>
+                </div>
+                <div className='card img-card'>
+                  <span className='caption'>Corner Incorrectly Inserted</span>
+                </div>
+              </section>
+            </section>
+          </section>
         </section>
       </div>
     );

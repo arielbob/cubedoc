@@ -198,18 +198,7 @@
     background-color: $main-red;
     color: $nav-background;
     flex-grow: 1;
-    height: 30px;
-    line-height: 30px;
+    padding: 5px;
     text-align: center;
-  }
-}
-
-.instructions-3x3 {
-  .step-card {
-    border-color: $main-red;
-    h3 {
-      color: $main-red;
-      text-transform: uppercase;
-    }
   }
 }

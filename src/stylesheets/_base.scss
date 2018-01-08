@@ -38,7 +38,7 @@ button {
 .container {
   margin: $gutter auto;
   padding: 0 $gutter;
-  max-width: $content-width;
+  width: $content-width;
   &.bleed-top {
     margin-top: 0;
   }
@@ -47,7 +47,7 @@ button {
 //TODO: maybe switch these to min-width and swap mobile/web styles to follow mobile first styling
 @media only screen and (max-width: $breakpoint-lg) {
   .container {
-    max-width: 800px;
+    width: 800px;
   }
 }
 
@@ -112,4 +112,7 @@ button {
   background-color: $warning-background;
   border-radius: $card-border-radius;
   padding: $text-box-padding;
+  :first-child {
+    margin-top: 0;
+  }
 }

@@ -1,7 +1,20 @@
+.instructions-3x3 {
+  .step-card {
+    border-color: $main-red;
+    h3 {
+      color: $main-red;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//TODO: refactor steps so that we have a class for left and right sections
+//instead of using both section and .card for multiple things
 .step {
+  align-items:flex-start;
   display: flex;
   margin-top: $content-margin;
-  section {
+  section, .card {
     flex: 1 0; // flex-grow flex-basis
   }
   .img-card {
@@ -22,7 +35,6 @@
   }
 }
 
-//since the left card is usually 380px wide, we could just have a .left class with this max-width set
 .step1 {
   .step-card {
     max-width: 380px;
@@ -57,5 +69,17 @@
     .card {
       margin-right: 0;
     }
+  }
+}
+
+.step3 {
+  .diagrams-first-layer {
+    max-width: 380px;
+    :not(:last-child) {
+      margin-bottom: $gutter;
+    }
+  }
+  .diagrams-corners {
+    display: flex;
   }
 }
