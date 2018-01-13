@@ -8,7 +8,7 @@ class Solve3x3 extends React.Component {
         <h2 className='article-name'>How to Solve</h2>
         <section className='instructions instructions-3x3'>
           <section className='step step1'>
-            <section className='card step-card'>
+            <section className='fixed-width card step-card'>
               <h3>Notation</h3>
               <p>Solving a Rubik's cube involves using algorithms, which are sets of moves to accomplish a task. Rubik's cube algorithms use the following notation:</p>
               <ul>
@@ -28,7 +28,7 @@ class Solve3x3 extends React.Component {
                 <li>F R U' R' U' R U R' F' R U R' U' R' F R F'</li>
               </ul>
             </section>
-            <section className='diagrams-notation'>
+            <section className='grow diagrams-notation'>
               <div className='row'>
                 <div className='card img-card'>
                   <span className='caption'>U</span>
@@ -54,17 +54,17 @@ class Solve3x3 extends React.Component {
             </section>
           </section>
           <section className='step step2'>
-            <div className='card img-card'>
+            <div className='fixed-width card img-card'>
               <span className='caption'>Solved Cross</span>
             </div>
-            <section className='card step-card'>
+            <section className='grow card step-card'>
               <h3>The Cross</h3>
               <p>The first step of solving the Rubik's cube is to solve the cross. This step is very intuitive and gets easier when it is practiced. In this tutorial, we solve a white cross, but the cross can be any colour. The non-white side of the edge pieces must all align with its corresponding center piece.</p>
               <p className='text-warning'>The center pieces of the Rubik's cube will never move. Blue will always be opposite from green, red will always be opposite from orange, and yellow with white.</p>
             </section>
           </section>
           <section className='step step3'>
-            <section className='card step-card'>
+            <section className='grow card step-card'>
               <h3>Finishing the First Layer</h3>
               <p>Now, the corners of the first layer must be placed in their correct positions. Start by rotating the cube so that the cross is on the bottom. Next, position one of the four corners that has a white piece above its correct position. The corner can be inserted by doing the algorithm:</p>
               <ul>
@@ -79,11 +79,11 @@ class Solve3x3 extends React.Component {
                 </ul>
               </div>
             </section>
-            <section className='diagrams-first-layer'>
-              <div className='img-card solved-first-layer'>
+            <section className='fixed-width diagrams-first-layer'>
+              <div className='img-card'>
                 <span className='caption'>Solved First Layer</span>
               </div>
-              <section className='diagrams-corners'>
+              <section className='row'>
                 <div className='card img-card'>
                   <span className='caption'>Corner Above Position</span>
                 </div>

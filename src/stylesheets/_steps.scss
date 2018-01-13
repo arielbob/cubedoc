@@ -8,16 +8,18 @@
   }
 }
 
-//TODO: refactor steps so that we have a class for left and right sections
-//instead of using both section and .card for multiple things
 .step {
   align-items: flex-start;
   display: flex;
   margin-top: $content-margin;
-  section, .card {
-    flex: 1 0; // flex-grow flex-basis
+  .fixed-width {
+    flex: 0 0; // flex-grow flex-shrink
+  }
+  .grow {
+    flex-grow: 1;
   }
   .img-card {
+    flex-grow: 1;
     height: 220px;
   }
 }
@@ -27,7 +29,6 @@
     align-items: stretch;
     flex-direction: column;
     .step-card, .img-card, section {
-      max-width: none !important;
       width: 100%;
     }
     .step-card {
@@ -37,8 +38,8 @@
 }
 
 .step1 {
-  .step-card {
-    max-width: 380px;
+  .fixed-width {
+    flex-basis: 380px;
   }
 }
 
@@ -58,8 +59,8 @@
 }
 
 .step2 {
-  .img-card {
-    max-width: 380px;
+  .fixed-width {
+    flex-basis: 380px;
   }
 }
 
@@ -69,17 +70,20 @@
     .card {
       margin-right: 0;
     }
+    .img-card {
+      margin-bottom: 0;
+    }
+    .fixed-width {
+      flex-basis: auto;
+    }
   }
 }
 
 .step3 {
-  .diagrams-first-layer {
-    max-width: 380px;
-    :not(:last-child) {
-      margin-bottom: $gutter;
-    }
+  .fixed-width {
+    flex-basis: 380px;
   }
-  .diagrams-corners {
-    display: flex;
+  .diagrams-first-layer > :not(:last-child) { // separate top and bottom of diagrams section
+    margin-bottom: $gutter;
   }
 }
