@@ -176,7 +176,6 @@
   background-color: $nav-background;
   border-radius: 0 0 $card-border-radius $card-border-radius;
   border-top: 3px solid #000000;
-  flex-grow: 1;
   padding: $card-gutter;
   h3 {
     margin-top: 0;
@@ -189,7 +188,6 @@
 .img-card {
   background-color: $nav-background;
   border-radius: $card-border-radius;
-  flex-grow: 1;
   display: flex;
   overflow: hidden;
   height: 100px;
