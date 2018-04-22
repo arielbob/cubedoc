@@ -30,6 +30,24 @@ h1 {
   font-family: 'Roboto Slab', serif;
 }
 
+a {
+  color: $text-black;
+  text-decoration: none;
+  font-weight: bold;
+  &:visited {
+    color: $text-black;
+  }
+  & + p {
+    margin-top: 0;
+  }
+  &.red {
+    color: $main-red;
+  }
+  &.blue {
+    color: $main-blue;
+  }
+}
+
 button {
   border: none;
   outline: none;

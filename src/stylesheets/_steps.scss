@@ -1,3 +1,7 @@
+.mobile-horizontal-scroll {
+  display: block;
+}
+
 .instructions-3x3 {
   .step-card {
     border-color: $main-red;
@@ -57,4 +61,26 @@
 	.step2, .step4 {
 		flex-direction: column-reverse;
 	}
+}
+
+.link-info {
+  display: flex;
+  .link-block {
+    max-width: 200px;
+    &:not(:last-child) {
+      margin-right: $gutter;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .link-info {
+    flex-direction: column;
+    .link-block {
+      max-width: none;
+      &:not(:last-child) {
+        margin-bottom: $gutter;
+      }
+    }
+  }
 }

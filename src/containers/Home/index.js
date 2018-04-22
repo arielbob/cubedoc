@@ -15,9 +15,9 @@ class Home extends React.Component {
           color='red'
           link='/how-to-solve'
           >
-            <a href='#'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></a>
+            <a className='link-main' href='#'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></a>
             <p>Learn various algorithms to orient the last layer of the 3x3.</p>
-            <a href='#'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></a>
+            <a className='link-main' href='#'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></a>
             <p>A collection of different last layer permutation algorithms.</p>
           </MainCard>
           <MainCard
@@ -25,7 +25,7 @@ class Home extends React.Component {
             description={'The bigger Rubik\'s cube. Learn how to use the Yau Method and how to solve unique 4x4 cases.'}
             color='blue'
             >
-              <a href='#'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></a>
+              <a className='link-main' href='#'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></a>
               <p>A collection of different algorithms to solve the 4x4's special cases.</p>
             </MainCard>
           </div>

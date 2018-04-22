@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Step1 = () => (
 	<section className='step step1'>
@@ -152,29 +153,31 @@ const Step5 = () => (
 				If you have three yellow corners, your cube is unsolvable. You must physically twist a corner, or take your cube apart and reassemble it so that it is solvable.
 			</p>
 		</section>
-		<section className=''>
-			<div className='row'>
-				<div className='card img-card'>
-					<span className='caption'>Dot Case</span>
+		<section className='card'>
+			<section className='row mobile-horizontal-scroll'>
+				<div className='row'>
+					<div className='card img-card'>
+						<span className='caption'>Dot Case</span>
+					</div>
+					<div className='card img-card'>
+						<span className='caption'>Line Case</span>
+					</div>
+					<div className='card img-card'>
+						<span className='caption'>Square Case</span>
+					</div>
 				</div>
-				<div className='card img-card'>
-					<span className='caption'>Line Case</span>
+				<div className='row'>
+					<div className='card img-card'>
+						<span className='caption'>One Yellow Corner</span>
+					</div>
+					<div className='card img-card'>
+						<span className='caption'>Two Yellow Corner</span>
+					</div>
+					<div className='card img-card'>
+						<span className='caption'>No Yellow Corner</span>
+					</div>
 				</div>
-				<div className='card img-card'>
-					<span className='caption'>Square Case</span>
-				</div>
-			</div>
-			<div className='row'>
-				<div className='card img-card'>
-					<span className='caption'>One Yellow Corner</span>
-				</div>
-				<div className='card img-card'>
-					<span className='caption'>Two Yellow Corner</span>
-				</div>
-				<div className='card img-card'>
-					<span className='caption'>No Yellow Corner</span>
-				</div>
-			</div>
+			</section>
 			<div className='row'>
 				<div className='card img-card'>
 					<span className='caption'>Orientated Last Layer</span>
@@ -187,54 +190,64 @@ const Step5 = () => (
 const Step6 = () => (
 	<section className='step step6'>
 		<section className='card step-card'>
-			<h3>Orientation of the Last Layer</h3>
-			<p>The second to last step of solving the 3x3 cube is to orient the pieces of the last layer so that the whole top face is a single colour. In our case, our last layer's face will be yellow.</p>
-			<p>To orient the last layer, match your case to one of the top three cases. If none of the top three cases match your case, you can skip this algorithm. If they do, perform these moves:</p>
+			<h3>Permutation of the Last Layer</h3>
+			<p>The final step in completing the Rubik's cube is to swap the corners and edges of the last layer.</p>
+			<p>First, if you see two corners with the same colour on one side, put those two corners at the back and do this algorithm:</p>
 			<ul>
-				<li>R U R' U'</li>
+				<li>R' F R' B2 R F' R' B2 R2 U'</li>
 			</ul>
-			<p>For the square case, you can either do the above algorithm and match it to another case, or do this algorithm:</p>
+			<p>If there are no two corners that match this case, then do the above algorithm until there are.</p>
+			<p>Next, if there is one side of the top layer where all the pieces are the same colour, put that side on the back and do one of the following algorithms:</p>
+			<p>To cycle edges clockwise:</p>
 			<ul>
-				<li>f2 R U R' U' f2'</li>
+				<li>R2 U R U R' U' R' U' R' U R'</li>
 			</ul>
-			<p>The lowercase F means to rotate the front layer with the middle layer, so you are doing what looks like a thick rotation of the front face.</p>
-			<p>To complete orientation, match your case to one of the bottom three that most closely matches it and perform this algorithm:</p>
-			<ul>
-				<li>R U R' U R U2 R' </li>
-			</ul>
-			<p>In essence, if you have one yellow corner, rotate the top so that the corner is in the bottom left. If you have two yellow corners, rotate the top so that the top left corner of your front face has a yellow square. Finally, if you have no yellow corners, make sure the top right corner of your left face has a yellow square.</p>
-			<p className='text-warning'>
-				If you have three yellow corners, your cube is unsolvable. You must physically twist a corner, or take your cube apart and reassemble it so that it is solvable.
-			</p>
+			<p>To cycle edges counter-clockwise:</p>
+			<ul><li>R U' R U R U R U' R' U' R2</li></ul>
+			<p>If there is no complete side yet, then just do one of the edge cycling algorithms once. If you did all the steps correctly, your Rubik's cube should be solved.</p>
 		</section>
 		<section className='small-side'>
 			<div className='row'>
 				<div className='card img-card'>
-					<span className='caption'>Dot Case</span>
+					<span className='caption'>Matching Corners</span>
 				</div>
 				<div className='card img-card'>
-					<span className='caption'>Line Case</span>
-				</div>
-				<div className='card img-card'>
-					<span className='caption'>Square Case</span>
+					<span className='caption'>Clockwise Edge Cycle</span>
 				</div>
 			</div>
 			<div className='row'>
 				<div className='card img-card'>
-					<span className='caption'>One Yellow Corner</span>
+					<span className='caption'>Counter-Clockwise Edge Cycle</span>
 				</div>
 				<div className='card img-card'>
-					<span className='caption'>Two Yellow Corner</span>
-				</div>
-				<div className='card img-card'>
-					<span className='caption'>No Yellow Corner</span>
+					<span className='caption'>Solved Cube</span>
 				</div>
 			</div>
-			<div className='row'>
-				<div className='card img-card'>
-					<span className='caption'>Orientated Last Layer</span>
+		</section>
+	</section>
+);
+
+const Conclusion = () => (
+	<section className='step'>
+		<section className='card step-card'>
+			<h3>Where to Go From Here</h3>
+			<p>If you enjoyed solving the Rubik's cube, you may want to learn how to do it faster. The first two layers can be done intuitively using a method called F2L, and the last layer can be solved with fewer algorithms.</p>
+			<section className='link-info'>
+				<div className='link-block'>
+					<a className='link-main' href='#'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></a>
+					<p>Learn various algorithms to orient the last layer of the 3x3.</p>
 				</div>
-			</div>
+				<div className='link-block'>
+					<a className='link-main' href='#'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></a>
+					<p>A collection of different last layer permutation algorithms.</p>
+				</div>
+				<div className='link-block'>
+					<a className='link-main' href='#'><span className='underline'></span>Tips<span className='arrow'>&rarr;</span></a>
+					<p>General tips to help you in your solves.</p>
+				</div>
+			</section>
+			<p>If you want more of a challenge, consider learning how to solve the 4x4 Rubik's cube.</p>
+			<a className='link-main' href='#'><span className='underline'></span>Learn 4x4<span className='arrow'>&rarr;</span></a>
 		</section>
 	</section>
 );
@@ -251,6 +264,8 @@ class Solve3x3 extends React.Component {
           <Step3/>
 					<Step4/>
 					<Step5/>
+					<Step6/>
+					<Conclusion/>
         </section>
       </div>
     );
