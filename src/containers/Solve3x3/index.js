@@ -22,7 +22,7 @@ const Step1 = () => (
 			  <li>F R U' R' U' R U R' F' R U R' U' R' F R F'</li>
 			</ul>
 	  </section>
-	  <section className='diagrams-notation'>
+	  <section className='mobile-horizontal-scroll'>
 			<div className='row'>
 			  <div className='card img-card'>
 				<span className='caption'>U</span>
@@ -97,6 +97,148 @@ const Step3 = () => (
 	</section>
 );
 
+const Step4 = () => (
+	<section className='step step4'>
+		<section className='card small-side'>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>Solved First Two Layers</span>
+				</div>
+			</div>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>Left Edge Insert</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Right Edge Insert</span>
+				</div>
+			</div>
+		</section>
+		<section className='card step-card'>
+			<h3>Inserting the Edges</h3>
+			<p>To complete the first two layers, we must insert the edges. To insert an edge, position an edge piece to be inserted above the center who's colour corresponds to the side of the edge it is touching. If the edge is to be inserted to its left, do the following algorithm:</p>
+			<ul>
+				<li>U' L' U L U F U' F'</li>
+			</ul>
+			<p>If it is to be inserted to the right, do this algorithm:</p>
+			<ul>
+				<li>U R U' R' U' F' U F</li>
+			</ul>
+			<p>If an edge is in the first two layers, but in an incorrect position, then insert a different edge in that position to get the mispositioned edge out.</p>
+		</section>
+	</section>
+);
+
+const Step5 = () => (
+	<section className='step step5'>
+		<section className='card step-card small-side'>
+			<h3>Orientation of the Last Layer</h3>
+			<p>The second to last step of solving the 3x3 cube is to orient the pieces of the last layer so that the whole top face is a single colour. In our case, our last layer's face will be yellow.</p>
+			<p>To orient the last layer, match your case to one of the top three cases. If none of the top three cases match your case, you can skip this algorithm. If they do, perform these moves:</p>
+			<ul>
+				<li>R U R' U'</li>
+			</ul>
+			<p>For the square case, you can either do the above algorithm and match it to another case, or do this algorithm:</p>
+			<ul>
+				<li>f2 R U R' U' f2'</li>
+			</ul>
+			<p>The lowercase F means to rotate the front layer with the middle layer, so you are doing what looks like a thick rotation of the front face.</p>
+			<p>To complete orientation, match your case to one of the bottom three that most closely matches it and perform this algorithm:</p>
+			<ul>
+				<li>R U R' U R U2 R' </li>
+			</ul>
+			<p>In essence, if you have one yellow corner, rotate the top so that the corner is in the bottom left. If you have two yellow corners, rotate the top so that the top left corner of your front face has a yellow square. Finally, if you have no yellow corners, make sure the top right corner of your left face has a yellow square.</p>
+			<p className='text-warning'>
+				If you have three yellow corners, your cube is unsolvable. You must physically twist a corner, or take your cube apart and reassemble it so that it is solvable.
+			</p>
+		</section>
+		<section className=''>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>Dot Case</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Line Case</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Square Case</span>
+				</div>
+			</div>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>One Yellow Corner</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Two Yellow Corner</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>No Yellow Corner</span>
+				</div>
+			</div>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>Orientated Last Layer</span>
+				</div>
+			</div>
+		</section>
+	</section>
+);
+
+const Step6 = () => (
+	<section className='step step6'>
+		<section className='card step-card'>
+			<h3>Orientation of the Last Layer</h3>
+			<p>The second to last step of solving the 3x3 cube is to orient the pieces of the last layer so that the whole top face is a single colour. In our case, our last layer's face will be yellow.</p>
+			<p>To orient the last layer, match your case to one of the top three cases. If none of the top three cases match your case, you can skip this algorithm. If they do, perform these moves:</p>
+			<ul>
+				<li>R U R' U'</li>
+			</ul>
+			<p>For the square case, you can either do the above algorithm and match it to another case, or do this algorithm:</p>
+			<ul>
+				<li>f2 R U R' U' f2'</li>
+			</ul>
+			<p>The lowercase F means to rotate the front layer with the middle layer, so you are doing what looks like a thick rotation of the front face.</p>
+			<p>To complete orientation, match your case to one of the bottom three that most closely matches it and perform this algorithm:</p>
+			<ul>
+				<li>R U R' U R U2 R' </li>
+			</ul>
+			<p>In essence, if you have one yellow corner, rotate the top so that the corner is in the bottom left. If you have two yellow corners, rotate the top so that the top left corner of your front face has a yellow square. Finally, if you have no yellow corners, make sure the top right corner of your left face has a yellow square.</p>
+			<p className='text-warning'>
+				If you have three yellow corners, your cube is unsolvable. You must physically twist a corner, or take your cube apart and reassemble it so that it is solvable.
+			</p>
+		</section>
+		<section className='small-side'>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>Dot Case</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Line Case</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Square Case</span>
+				</div>
+			</div>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>One Yellow Corner</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>Two Yellow Corner</span>
+				</div>
+				<div className='card img-card'>
+					<span className='caption'>No Yellow Corner</span>
+				</div>
+			</div>
+			<div className='row'>
+				<div className='card img-card'>
+					<span className='caption'>Orientated Last Layer</span>
+				</div>
+			</div>
+		</section>
+	</section>
+);
+
 class Solve3x3 extends React.Component {
   render() {
     return (
@@ -107,6 +249,8 @@ class Solve3x3 extends React.Component {
 					<Step1/>
           <Step2/>
           <Step3/>
+					<Step4/>
+					<Step5/>
         </section>
       </div>
     );

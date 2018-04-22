@@ -43,20 +43,18 @@
 		}
 	}
 
-  .step1 {
-    .diagrams-notation {
-      overflow-x: scroll;
-      display: flex;
-      .row {
-        margin: auto $gutter $gutter auto;
-        .img-card {
-          min-width: 200px;
-        }
+  .mobile-horizontal-scroll {
+    overflow-x: scroll;
+    display: flex;
+    .row {
+      margin: auto $gutter $gutter auto;
+      .img-card {
+        min-width: 200px;
       }
     }
   }
 
-	.step2 {
+	.step2, .step4 {
 		flex-direction: column-reverse;
 	}
 }
