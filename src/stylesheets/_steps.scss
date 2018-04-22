@@ -14,6 +14,9 @@
   align-items: flex-start;
   display: flex;
   margin-top: $content-margin;
+	.small-side {
+		max-width: 380px;
+	}
   section, .card {
     flex: 1 0; // flex-grow flex-basis
   }
@@ -23,26 +26,24 @@
 }
 
 @media only screen and (max-width: $breakpoint-lg) {
-  .step {
-    align-items: stretch;
-    flex-direction: column;
-    .step-card, .img-card, section {
-      max-width: none !important;
-      width: 100%;
-    }
-    .step-card {
-      margin-bottom: $gutter;
-    }
-  }
-}
-
-.step1 {
-  .step-card {
-    max-width: 380px;
-  }
+  .step .small-side {
+		max-width: 300px;
+	}
 }
 
 @media only screen and (max-width: $breakpoint) {
+	.step {
+		flex-direction: column;
+		align-items: stretch;
+		.step-card, .small-side, section {
+			max-width: none;
+			width: 100%;
+		}
+		.step-card {
+			margin-bottom: $gutter;
+		}
+	}
+
   .step1 {
     .diagrams-notation {
       overflow-x: scroll;
@@ -55,31 +56,8 @@
       }
     }
   }
-}
 
-.step2 {
-  .img-card {
-    max-width: 380px;
-  }
-}
-
-@media only screen and (max-width: $breakpoint-lg) {
-  .step2 {
-    flex-direction: column-reverse;
-    .card {
-      margin-right: 0;
-    }
-  }
-}
-
-.step3 {
-  .diagrams-first-layer {
-    max-width: 380px;
-    :not(:last-child) {
-      margin-bottom: $gutter;
-    }
-  }
-  .diagrams-corners {
-    display: flex;
-  }
+	.step2 {
+		flex-direction: column-reverse;
+	}
 }
