@@ -2,12 +2,24 @@
   display: block;
 }
 
-.instructions-3x3 {
-  .step-card {
-    border-color: $main-red;
-    h3 {
-      color: $main-red;
-      text-transform: uppercase;
+.instructions {
+  &.red {
+    .step-card {
+      border-color: $main-red;
+      h3 {
+        color: $main-red;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &.blue {
+    .step-card {
+      border-color: $main-blue;
+      h3 {
+        color: $main-blue;
+        text-transform: uppercase;
+      }
     }
   }
 }

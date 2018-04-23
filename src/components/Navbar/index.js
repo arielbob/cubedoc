@@ -39,7 +39,7 @@ class Navbar extends React.Component {
                 <li><a href='#'>Tips</a></li>
               </DropdownListItem>
               <DropdownListItem text='4x4'>
-                <li><a href='#'>Yau Method</a></li>
+                <li><Link to='/yau-method'>Yau Method</Link></li>
                 <li><a href='#'>Parity</a></li>
                 <li><a href='#'>Tips</a></li>
               </DropdownListItem>

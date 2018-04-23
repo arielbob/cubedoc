@@ -24,6 +24,7 @@ class Home extends React.Component {
             title='4x4'
             description={'The bigger Rubik\'s cube. Learn how to use the Yau Method and how to solve unique 4x4 cases.'}
             color='blue'
+            link='/yau-method'
             >
               <a className='link-main' href='#'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></a>
               <p>A collection of different algorithms to solve the 4x4's special cases.</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Step1 = () => (
 	<section className='step step1'>
@@ -247,7 +247,7 @@ const Conclusion = () => (
 				</div>
 			</section>
 			<p>If you want more of a challenge, consider learning how to solve the 4x4 Rubik's cube.</p>
-			<a className='link-main' href='#'><span className='underline'></span>Learn 4x4<span className='arrow'>&rarr;</span></a>
+			<Link className='link-main' to='/yau-method'><span className='underline'></span>Learn 4x4<span className='arrow'>&rarr;</span></Link>
 		</section>
 	</section>
 );
@@ -256,9 +256,9 @@ class Solve3x3 extends React.Component {
   render() {
     return (
       <div className='container bleed-top'>
-        <h1 className='title-big'>3x3</h1>
+        <h1 className='title-big red'>3x3</h1>
         <h2 className='article-name'>How to Solve</h2>
-        <section className='instructions instructions-3x3'>
+        <section className='instructions red'>
 					<Step1/>
           <Step2/>
           <Step3/>
