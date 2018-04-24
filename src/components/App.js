@@ -12,11 +12,17 @@ import Solve4x4 from '../containers/Solve4x4';
 //can use render property instead of component for functional components (refactor dumb components that are using classes)
 //TODO: do server rendering with routes
 
+const ScrollToTop = () => {
+  window.scrollTo(0, 0);
+  return null;
+};
+
 export default class App extends React.Component {
   render() {
     return (
       <Router>
         <div>
+          <Route render={ScrollToTop} />
           <Navbar />
           <Route exact path='/' component={Home} />
           <Route path='/how-to-solve' component={Solve3x3} />

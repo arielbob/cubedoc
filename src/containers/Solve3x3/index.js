@@ -23,7 +23,7 @@ const Step1 = () => (
 			  <li>F R U' R' U' R U R' F' R U R' U' R' F R F'</li>
 			</ul>
 	  </section>
-	  <section className='mobile-horizontal-scroll'>
+	  <section className='card mobile-horizontal-scroll'>
 			<div className='row'>
 			  <div className='card img-card'>
 				<span className='caption'>U</span>
@@ -235,7 +235,7 @@ const Conclusion = () => (
 			<section className='link-info'>
 				<div className='link-block'>
 					<a className='link-main' href='#'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></a>
-					<p>Learn various algorithms to orient the last layer of the 3x3.</p>
+					<p>Learn various algorithms to orient the last layer of the 3x3 cube.</p>
 				</div>
 				<div className='link-block'>
 					<a className='link-main' href='#'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></a>
@@ -243,7 +243,7 @@ const Conclusion = () => (
 				</div>
 				<div className='link-block'>
 					<a className='link-main' href='#'><span className='underline'></span>Tips<span className='arrow'>&rarr;</span></a>
-					<p>General tips to help you in your solves.</p>
+					<p>General tips to help you in your 3x3 solves.</p>
 				</div>
 			</section>
 			<p>If you want more of a challenge, consider learning how to solve the 4x4 Rubik's cube.</p>
@@ -258,7 +258,7 @@ class Solve3x3 extends React.Component {
       <div className='container bleed-top'>
         <h1 className='title-big red'>3x3</h1>
         <h2 className='article-name'>How to Solve</h2>
-        <section className='instructions red'>
+        <section className='instructions instructions-3x3 red'>
 					<Step1/>
           <Step2/>
           <Step3/>

@@ -24,6 +24,22 @@
   }
 }
 
+.instructions-3x3 {
+  .img-card {
+    .caption {
+      background-color: $main-red;
+    }
+  }
+}
+
+.instructions-4x4 {
+  .img-card {
+    .caption {
+      background-color: $main-blue;
+    }
+  }
+}
+
 .step {
   align-items: flex-start;
   display: flex;
@@ -70,15 +86,24 @@
     }
   }
 
-	.step2, .step4 {
-		flex-direction: column-reverse;
-	}
+  .instructions-3x3 {
+    .step2, .step4 {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .instructions-4x4 {
+    .step1, .step3 {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .link-info {
   display: flex;
   .link-block {
     max-width: 200px;
+    flex-grow: 1;
     &:not(:last-child) {
       margin-right: $gutter;
     }

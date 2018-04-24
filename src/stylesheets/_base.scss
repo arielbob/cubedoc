@@ -133,4 +133,7 @@ button {
   :first-child {
     margin-top: 0;
   }
+  &.blue {
+    background-color: $warning-background-blue;
+  }
 }
