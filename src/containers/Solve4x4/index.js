@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Step1 = () => (
 	<section className='step step1'>
-	  <section className='card small-side'>
+	  <section className='small-side'>
       <div className='row'>
         <div className='card img-card'>
           <span className='caption'>Keyhole Cross</span>
@@ -26,7 +26,7 @@ const Step2 = () => (
       <p>Form a two long line at the top, then put it on the left of the top center. Then, rotate the inner left layer clockwise. Do this until you have three lines of three centers solved and one empty center at the top remains. Create the other three lines and pair them with the lines you just created. Your centers should be solved.</p>
       <p>Finish by pairing the final white edge of the cross.</p>
 	  </section>
-    <section className='card small-side'>
+    <section className='small-side'>
       <div className='row'>
         <div className='card img-card'>
           <span className='caption'>Solved Centers</span>
@@ -38,7 +38,7 @@ const Step2 = () => (
 
 const Step3 = () => (
 	<section className='step step3'>
-    <section className='card small-side'>
+    <section className='small-side'>
       <div className='row'>
         <div className='card img-card'>
           <span className='caption'>OLL Parity</span>

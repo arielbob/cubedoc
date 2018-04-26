@@ -22,7 +22,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <div>
-          <Route render={ScrollToTop} />
+          <Route component={ScrollToTop} />
           <Navbar />
           <Route exact path='/' component={Home} />
           <Route path='/how-to-solve' component={Solve3x3} />

@@ -23,7 +23,7 @@ const Step1 = () => (
 			  <li>F R U' R' U' R U R' F' R U R' U' R' F R F'</li>
 			</ul>
 	  </section>
-	  <section className='card mobile-horizontal-scroll'>
+	  <section className='mobile-horizontal-scroll'>
 			<div className='row'>
 			  <div className='card img-card'>
 				<span className='caption'>U</span>
@@ -52,7 +52,7 @@ const Step1 = () => (
 
 const Step2 = () => (
 	<section className='step step2'>
-		<div className='card img-card small-side'>
+		<div className='img-card small-side'>
 			<span className='caption'>Solved Cross</span>
 		</div>
 		<section className='card step-card'>
@@ -80,7 +80,7 @@ const Step3 = () => (
 				</ul>
 			</div>
 		</section>
-		<section className='diagrams-first-layer small-side'>
+		<section className='small-side'>
 			<div className='row'>
 				<div className='img-card'>
 					<span className='caption'>Solved First Layer</span>
@@ -100,7 +100,7 @@ const Step3 = () => (
 
 const Step4 = () => (
 	<section className='step step4'>
-		<section className='card small-side'>
+		<section className='small-side'>
 			<div className='row'>
 				<div className='card img-card'>
 					<span className='caption'>Solved First Two Layers</span>
@@ -153,7 +153,7 @@ const Step5 = () => (
 				If you have three yellow corners, your cube is unsolvable. You must physically twist a corner, or take your cube apart and reassemble it so that it is solvable.
 			</p>
 		</section>
-		<section className='card'>
+		<section>
 			<section className='row mobile-horizontal-scroll'>
 				<div className='row'>
 					<div className='card img-card'>

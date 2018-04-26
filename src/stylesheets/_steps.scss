@@ -1,3 +1,7 @@
+.step > section:not(:last-child) {
+	margin-right: $gutter;
+}
+
 .mobile-horizontal-scroll {
   display: block;
 }

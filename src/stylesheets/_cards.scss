@@ -4,9 +4,13 @@
 //TODO: replace $nav-background with $white
 //TODO: figure out how to organize css better
 
-.card:not(:last-child) {
-  margin-right: $gutter;
+.card {
+	box-shadow: 0 5px 10px 0 rgba(#000000, 0.06);
 }
+
+// .card:not(:last-child) {
+//   margin-right: $gutter;
+// }
 
 .main-card {
   overflow: hidden;
@@ -192,4 +196,7 @@ a.link-main {
     padding: 5px;
     text-align: center;
   }
+	&:not(:last-child) {
+		margin-right: $gutter;
+	}
 }
