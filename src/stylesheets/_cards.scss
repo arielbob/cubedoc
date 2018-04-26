@@ -200,3 +200,35 @@ a.link-main {
 		margin-right: $gutter;
 	}
 }
+
+.algorithms {
+	.row {
+		margin-top: -$gutter;
+	}
+	.row .img-card {
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 200px;
+		margin-top: $gutter;
+	}
+}
+
+@media only screen and (max-width: $breakpoint-lg) {
+	.algorithms {
+		.row .img-card {
+			flex-basis: 160px;
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint) {
+	.algorithms {
+		.row .img-card {
+			flex-basis: 100%;
+		}
+		.step-card {
+			position: sticky;
+			top: 0;
+		}
+	}
+}

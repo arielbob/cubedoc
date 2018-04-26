@@ -2,8 +2,16 @@
 	margin-right: $gutter;
 }
 
+.step.column > section:not(:last-child) {
+	margin-bottom: $gutter;
+}
+
 .mobile-horizontal-scroll {
   display: block;
+}
+
+.wrap {
+	flex-wrap: wrap;
 }
 
 .instructions {
@@ -48,6 +56,9 @@
   align-items: flex-start;
   display: flex;
   margin-top: $content-margin;
+	&.column {
+		flex-direction: column;
+	}
 	.small-side {
 		max-width: 380px;
 	}

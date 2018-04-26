@@ -34,7 +34,7 @@ class Navbar extends React.Component {
             <ul className={['nav-list', !this.state.toggled && 'hidden'].join(' ')}>
               <DropdownListItem text='3x3'>
                 <li><Link to='/how-to-solve'>How to Solve</Link></li>
-                <li><a href='#'>OLL</a></li>
+                <li><Link to='/oll'>OLL</Link></li>
                 <li><a href='#'>PLL</a></li>
                 <li><a href='#'>Tips</a></li>
               </DropdownListItem>
