@@ -12,10 +12,10 @@ const Pll = () => (
 					</section>
 					<div className='row wrap inline'>
 						<div className='card img-card'>
-							<span className='caption'>Caption</span>
+							<span className='caption'>R2 U R U R' U' R' U' R' U R'</span>
 						</div>
 						<div className='card img-card'>
-							<span className='caption'>Caption</span>
+							<span className='caption'>R U' R U R U R U' R' U' R2</span>
 						</div>
 					</div>
 				</section>
@@ -25,10 +25,10 @@ const Pll = () => (
 					</section>
 					<div className='row wrap inline'>
 						<div className='card img-card'>
-							<span className='caption'>Caption</span>
+							<span className='caption'>x R' U R' D2 R U' R' D2 R2</span>
 						</div>
 						<div className='card img-card'>
-							<span className='caption'>Caption</span>
+							<span className='caption'>x R2 D2 R U R' D2 R U' R</span>
 						</div>
 					</div>
 				</section>
@@ -39,25 +39,13 @@ const Pll = () => (
 				</section>
 				<div className='row wrap'>
 					<div className='card img-card'>
-						<span className='caption'>Caption</span>
+						<span className='caption'>M2 U' M2 U2 M2 U' M2</span>
 					</div>
 					<div className='card img-card'>
-						<span className='caption'>Caption</span>
+						<span className='caption'>M2 U M2 U M U2 M2 U2 M U2</span>
 					</div>
 					<div className='card img-card'>
-						<span className='caption'>Caption</span>
-					</div>
-					<div className='card img-card'>
-						<span className='caption'>Caption</span>
-					</div>
-					<div className='card img-card'>
-						<span className='caption'>Caption</span>
-					</div>
-					<div className='card img-card'>
-						<span className='caption'>Caption</span>
-					</div>
-					<div className='card img-card'>
-						<span className='caption'>Caption</span>
+						<span className='caption'>x' R U' R' D R U R' D' R U R' D R U' R' D'</span>
 					</div>
 				</div>
 			</section>
