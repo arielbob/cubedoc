@@ -125,6 +125,10 @@ button {
   &:not(:last-child) {
     margin-bottom: $gutter;
   }
+	&.inline {
+		display: inline-flex;
+		width: auto;
+	}
 }
 
 .text-warning {

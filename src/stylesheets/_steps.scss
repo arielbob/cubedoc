@@ -59,6 +59,12 @@
 	&.column {
 		flex-direction: column;
 	}
+	&.multi {
+		margin-top: 0;
+		.step {
+			margin-top: 0;
+		}
+	}
 	.small-side {
 		max-width: 380px;
 	}
@@ -81,6 +87,14 @@
 	.step {
 		flex-direction: column;
 		align-items: stretch;
+		&.multi {
+			.step {
+				margin-top: $content-margin;
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
 		.step-card, .small-side, section {
 			max-width: none;
 			width: 100%;
