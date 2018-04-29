@@ -238,7 +238,7 @@ const Conclusion = () => (
 					<p>Learn various algorithms to orient the last layer of the 3x3 cube.</p>
 				</div>
 				<div className='link-block'>
-					<a className='link-main' href='#'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></a>
+					<Link className='link-main' to='/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
 					<p>A collection of different last layer permutation algorithms.</p>
 				</div>
 				<div className='link-block'>

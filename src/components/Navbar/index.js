@@ -35,7 +35,7 @@ class Navbar extends React.Component {
               <DropdownListItem text='3x3'>
                 <li><Link to='/how-to-solve'>How to Solve</Link></li>
                 <li><Link to='/oll'>OLL</Link></li>
-                <li><a href='#'>PLL</a></li>
+                <li><Link to='/pll'>PLL</Link></li>
                 <li><a href='#'>Tips</a></li>
               </DropdownListItem>
               <DropdownListItem text='4x4'>

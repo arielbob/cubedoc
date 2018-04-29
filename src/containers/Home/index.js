@@ -18,7 +18,7 @@ class Home extends React.Component {
           >
             <Link className='link-main' to='/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
             <p>Learn various algorithms to orient the last layer of the 3x3.</p>
-            <a className='link-main' href='#'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></a>
+						<Link className='link-main' to='/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
             <p>A collection of different last layer permutation algorithms.</p>
         </MainCard>
         <MainCard
