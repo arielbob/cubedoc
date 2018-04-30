@@ -48,6 +48,14 @@ a {
   }
 }
 
+li {
+	margin-bottom: 0.75em;
+}
+
+ul ul li {
+	margin-bottom: 0;
+}
+
 button {
   border: none;
   outline: none;

@@ -242,7 +242,7 @@ const Conclusion = () => (
 					<p>A collection of different last layer permutation algorithms.</p>
 				</div>
 				<div className='link-block'>
-					<a className='link-main' href='#'><span className='underline'></span>Tips<span className='arrow'>&rarr;</span></a>
+					<Link className='link-main' to='/3x3/tips'><span className='underline'></span>Tips<span className='arrow'>&rarr;</span></Link>
 					<p>General tips to help you in your 3x3 solves.</p>
 				</div>
 			</section>
