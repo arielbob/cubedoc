@@ -1,7 +1,9 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect,
+  Switch
 } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from '../containers/Home';
@@ -24,9 +26,13 @@ export default class App extends React.Component {
         <div>
           <Route component={ScrollToTop} />
           <Navbar />
-          <Route exact path='/' render={Home} />
-          <Route path='/3x3' render={Solve3x3} />
-          <Route path='/4x4' render={Solve4x4} />
+          <Switch>
+            <Route exact path='/' render={Home} />
+            <Redirect exact from='/3x3' to='/3x3/how-to-solve' />
+            <Route path='/3x3' render={Solve3x3} />
+            <Redirect exact from='/4x4' to='/4x4/yau-method' />
+            <Route path='/4x4' render={Solve4x4} />
+          </Switch>
         </div>
       </Router>
     );

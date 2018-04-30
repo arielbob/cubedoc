@@ -78,7 +78,7 @@ const Conclusion = () => (
           <p>General tips to help you solve the 4x4 cube.</p>
         </div>
         <div className='link-block'>
-          <Link className='link-main' to='/how-to-solve'><span className='underline'></span>3x3<span className='arrow'>&rarr;</span></Link>
+          <Link className='link-main' to='/3x3/how-to-solve'><span className='underline'></span>3x3<span className='arrow'>&rarr;</span></Link>
           <p>Review how to solve the 3x3 cube.</p>
         </div>
       </section>

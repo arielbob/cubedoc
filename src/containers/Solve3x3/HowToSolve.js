@@ -247,7 +247,7 @@ const Conclusion = () => (
 				</div>
 			</section>
 			<p>If you want more of a challenge, consider learning how to solve the 4x4 Rubik's cube.</p>
-			<Link className='link-main' to='/yau-method'><span className='underline'></span>Learn 4x4<span className='arrow'>&rarr;</span></Link>
+			<Link className='link-main' to='/4x4/yau-method'><span className='underline'></span>Learn 4x4<span className='arrow'>&rarr;</span></Link>
 		</section>
 	</section>
 );
