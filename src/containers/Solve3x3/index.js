@@ -8,19 +8,16 @@ import Oll from './Oll';
 import Pll from './Pll';
 import Tips from './Tips';
 
-class Solve3x3 extends React.Component {
-  render() {
-		let { match } = this.props;
-    return (
-      <div className='container bleed-top'>
-        <h1 className='title-big red'>3x3</h1>
-				<Route path={match.url + '/how-to-solve'} render={HowToSolve} />
-				<Route path={match.url + '/oll'} render={Oll} />
-				<Route path={match.url + '/pll'} render={Pll} />
-				<Route path={match.url + '/tips'} render={Tips} />
-      </div>
-    );
-  }
+const Solve3x3 = ({match}) => {
+	return (
+		<div className='container bleed-top'>
+			<h1 className='title-big red'>3x3</h1>
+			<Route path={match.url + '/how-to-solve'} render={HowToSolve} />
+			<Route path={match.url + '/oll'} render={Oll} />
+			<Route path={match.url + '/pll'} render={Pll} />
+			<Route path={match.url + '/tips'} render={Tips} />
+		</div>
+	);
 }
 
 export default Solve3x3;

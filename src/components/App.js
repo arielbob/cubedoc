@@ -24,9 +24,9 @@ export default class App extends React.Component {
         <div>
           <Route component={ScrollToTop} />
           <Navbar />
-          <Route exact path='/' component={Home} />
-          <Route path='/3x3' component={Solve3x3} />
-          <Route path='/4x4' component={Solve4x4} />
+          <Route exact path='/' render={Home} />
+          <Route path='/3x3' render={Solve3x3} />
+          <Route path='/4x4' render={Solve4x4} />
         </div>
       </Router>
     );
