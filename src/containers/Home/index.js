@@ -27,7 +27,7 @@ class Home extends React.Component {
           color='blue'
           link='/yau-method'
           >
-            <a className='link-main' href='#'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></a>
+            <Link className='link-main' to='/4x4/parity'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></Link>
             <p>A collection of different algorithms to solve the 4x4's special cases.</p>
         </MainCard>
       </div>
