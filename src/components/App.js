@@ -25,9 +25,7 @@ export default class App extends React.Component {
           <Route component={ScrollToTop} />
           <Navbar />
           <Route exact path='/' component={Home} />
-          <Route path='/how-to-solve' component={Solve3x3} />
-          <Route path='/oll' component={Solve3x3} />
-          <Route path='/pll' component={Solve3x3} />
+          <Route path='/3x3' component={Solve3x3} />
           <Route path='/yau-method' component={Solve4x4} />
         </div>
       </Router>

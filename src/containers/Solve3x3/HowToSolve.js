@@ -234,11 +234,11 @@ const Conclusion = () => (
 			<p>If you enjoyed solving the Rubik's cube, you may want to learn how to do it faster. The first two layers can be done intuitively using a method called F2L, and the last layer can be solved with fewer algorithms.</p>
 			<section className='link-info'>
 				<div className='link-block'>
-					<Link className='link-main' to='/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
+					<Link className='link-main' to='/3x3/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
 					<p>Learn various algorithms to orient the last layer of the 3x3 cube.</p>
 				</div>
 				<div className='link-block'>
-					<Link className='link-main' to='/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
+					<Link className='link-main' to='/3x3/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
 					<p>A collection of different last layer permutation algorithms.</p>
 				</div>
 				<div className='link-block'>

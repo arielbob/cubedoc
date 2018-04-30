@@ -14,11 +14,11 @@ class Home extends React.Component {
           title='3x3'
           description={'The classic Rubik\'s cube. Learn how to solve it in easy steps and minimal memorization.'}
           color='red'
-          link='/how-to-solve'
+          link='/3x3/how-to-solve'
           >
-            <Link className='link-main' to='/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
+            <Link className='link-main' to='/3x3/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
             <p>Learn various algorithms to orient the last layer of the 3x3.</p>
-						<Link className='link-main' to='/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
+						<Link className='link-main' to='/3x3/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
             <p>A collection of different last layer permutation algorithms.</p>
         </MainCard>
         <MainCard

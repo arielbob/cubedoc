@@ -9,12 +9,13 @@ import Pll from './Pll';
 
 class Solve3x3 extends React.Component {
   render() {
+		let { match } = this.props;
     return (
       <div className='container bleed-top'>
         <h1 className='title-big red'>3x3</h1>
-				<Route path='/how-to-solve' render={HowToSolve} />
-				<Route path='/oll' render={Oll} />
-				<Route path='/pll' render={Pll} />
+				<Route path={match.url + '/how-to-solve'} render={HowToSolve} />
+				<Route path={match.url + '/oll'} render={Oll} />
+				<Route path={match.url + '/pll'} render={Pll} />
       </div>
     );
   }
