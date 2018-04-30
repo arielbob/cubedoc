@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import YauMethod from './YauMethod';
 import Parity from './Parity';
+import Tips from './Tips';
 
 const Solve4x4 = ({match}) => (
   <div className='container bleed-top'>
@@ -12,6 +13,7 @@ const Solve4x4 = ({match}) => (
     <section className='instructions instructions-4x4 blue'>
 			<Route path={match.url + '/yau-method'} render={YauMethod} />
 			<Route path={match.url + '/parity'} render={Parity} />
+			<Route path={match.url + '/tips'} render={Tips} />
     </section>
   </div>
 );

@@ -41,7 +41,7 @@ class Navbar extends React.Component {
               <DropdownListItem text='4x4'>
                 <li><Link to='/4x4/yau-method'>Yau Method</Link></li>
                 <li><Link to='/4x4/parity'>Parity</Link></li>
-                <li><a href='#'>Tips</a></li>
+                <li><Link to='/4x4/tips'>Tips</Link></li>
               </DropdownListItem>
               <li className='learn-container'><Link to='/3x3/how-to-solve' className='btn-main'>Learn</Link></li>
             </ul>
