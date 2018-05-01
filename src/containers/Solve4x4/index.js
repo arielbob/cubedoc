@@ -10,11 +10,9 @@ import Tips from './Tips';
 const Solve4x4 = ({match}) => (
   <div className='container bleed-top'>
     <h1 className='title-big blue'>4x4</h1>
-    <section className='instructions instructions-4x4 blue'>
-			<Route path={match.url + '/yau-method'} render={YauMethod} />
-			<Route path={match.url + '/parity'} render={Parity} />
-			<Route path={match.url + '/tips'} render={Tips} />
-    </section>
+		<Route path={match.url + '/yau-method'} render={YauMethod} />
+		<Route path={match.url + '/parity'} render={Parity} />
+		<Route path={match.url + '/tips'} render={Tips} />
   </div>
 );
 
