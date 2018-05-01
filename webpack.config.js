@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Uglify = require("uglifyjs-webpack-plugin");
 
 //TODO: add uglify to minify and clean up dead code
 //TODO: add production/dev env checking to disable sourcemaps and other things that i don't know yet
@@ -17,6 +18,7 @@ module.exports = {
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'bundle.js'
   },
   devServer: {
@@ -31,8 +33,8 @@ module.exports = {
         use: DEV ?
           ['style-loader', 'css-loader'] :
           ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
+            fallback: 'style-loader',
+            use: 'css-loader'
           })
       },
       {
@@ -40,8 +42,8 @@ module.exports = {
         use: DEV ?
           ['style-loader', 'css-loader', 'sass-loader'] :
           ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+            fallback: 'style-loader',
+            use: ['css-loader', 'sass-loader']
           })
       },
       {
@@ -59,6 +61,7 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.css'),
+    new Uglify()
   ]
 };
