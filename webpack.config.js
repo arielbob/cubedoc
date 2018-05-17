@@ -3,9 +3,8 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Uglify = require("uglifyjs-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-//TODO: add uglify to minify and clean up dead code
-//TODO: add production/dev env checking to disable sourcemaps and other things that i don't know yet
 //TODO: add postcss-loader for autoprefixing in css files
 
 const DEV = process.env.NODE_ENV !== 'production'
@@ -62,6 +61,12 @@ module.exports = {
       inject: 'body'
     }),
     new ExtractTextPlugin('styles.css'),
-    new Uglify()
+    new Uglify(),
+		new CopyWebpackPlugin([
+			{
+				from: 'src/images',
+				to: 'images'
+			}
+		])
   ]
 };

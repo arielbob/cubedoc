@@ -130,6 +130,7 @@ button {
 
 .row {
   display: flex;
+	align-items: flex-start;
 	width: 100%;
   &:not(:last-child) {
     margin-bottom: $gutter;

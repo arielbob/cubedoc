@@ -26,24 +26,30 @@ const Step1 = () => (
 	  <section className='mobile-horizontal-scroll'>
 			<div className='row'>
 			  <div className='card img-card'>
-				<span className='caption'>U</span>
+					<img src='/images/3x3/u.png'/>
+					<span className='caption'>U</span>
 			  </div>
 			  <div className='card img-card'>
-				<span className='caption'>L</span>
+					<img src='/images/3x3/l.png'/>
+					<span className='caption'>L</span>
 			  </div>
 			  <div className='card img-card'>
-				<span className='caption'>F</span>
+					<img src='/images/3x3/f.png'/>
+					<span className='caption'>F</span>
 			  </div>
 			</div>
 			<div className='row'>
 			  <div className='card img-card'>
-				<span className='caption'>D</span>
+					<img src='/images/3x3/d.png'/>
+					<span className='caption'>D</span>
 			  </div>
 			  <div className='card img-card'>
-				<span className='caption'>R</span>
+					<img src='/images/3x3/r.png'/>
+					<span className='caption'>R</span>
 			  </div>
 			  <div className='card img-card'>
-				<span className='caption'>B</span>
+					<img src='/images/3x3/b.png'/>
+					<span className='caption'>B</span>
 			  </div>
 			</div>
 	  </section>
@@ -53,6 +59,7 @@ const Step1 = () => (
 const Step2 = () => (
 	<section className='step step2'>
 		<div className='img-card small-side'>
+			<img src='/images/3x3/cross.png'/>
 			<span className='caption'>Solved Cross</span>
 		</div>
 		<section className='card step-card'>
@@ -83,14 +90,17 @@ const Step3 = () => (
 		<section className='small-side'>
 			<div className='row'>
 				<div className='img-card'>
+					<img src='/images/3x3/fl.png'/>
 					<span className='caption'>Solved First Layer</span>
 				</div>
 			</div>
 			<div className='row'>
 				<div className='card img-card'>
+					<img src='/images/3x3/corner-correct.png'/>
 					<span className='caption'>Corner Above Position</span>
 				</div>
 				<div className='card img-card'>
+					<img src='/images/3x3/corner-incorrect.png'/>
 					<span className='caption'>Corner Incorrectly Inserted</span>
 				</div>
 			</div>
@@ -103,14 +113,17 @@ const Step4 = () => (
 		<section className='small-side'>
 			<div className='row'>
 				<div className='card img-card'>
+					<img src='/images/3x3/f2l.png'/>
 					<span className='caption'>Solved First Two Layers</span>
 				</div>
 			</div>
 			<div className='row'>
 				<div className='card img-card'>
+					<img src='/images/3x3/lei.png'/>
 					<span className='caption'>Left Edge Insert</span>
 				</div>
 				<div className='card img-card'>
+					<img src='/images/3x3/rei.png'/>
 					<span className='caption'>Right Edge Insert</span>
 				</div>
 			</div>
@@ -157,29 +170,36 @@ const Step5 = () => (
 			<section className='row mobile-horizontal-scroll'>
 				<div className='row'>
 					<div className='card img-card'>
+						<img src='/images/3x3/dot.png'/>
 						<span className='caption'>Dot Case</span>
 					</div>
 					<div className='card img-card'>
+						<img src='/images/3x3/line.png'/>
 						<span className='caption'>Line Case</span>
 					</div>
 					<div className='card img-card'>
+						<img src='/images/3x3/square.png'/>
 						<span className='caption'>Square Case</span>
 					</div>
 				</div>
 				<div className='row'>
 					<div className='card img-card'>
+						<img src='/images/3x3/1yc.png'/>
 						<span className='caption'>One Yellow Corner</span>
 					</div>
 					<div className='card img-card'>
-						<span className='caption'>Two Yellow Corner</span>
+						<img src='/images/3x3/2yc.png'/>
+						<span className='caption'>Two Yellow Corners</span>
 					</div>
 					<div className='card img-card'>
-						<span className='caption'>No Yellow Corner</span>
+						<img src='/images/3x3/0yc.png'/>
+						<span className='caption'>No Yellow Corners</span>
 					</div>
 				</div>
 			</section>
 			<div className='row'>
 				<div className='card img-card'>
+					<img src='/images/3x3/oll.png'/>
 					<span className='caption'>Orientated Last Layer</span>
 				</div>
 			</div>
@@ -209,17 +229,21 @@ const Step6 = () => (
 		<section className='small-side'>
 			<div className='row'>
 				<div className='card img-card'>
+					<img src='/images/3x3/matching-corners.png'/>
 					<span className='caption'>Matching Corners</span>
 				</div>
 				<div className='card img-card'>
+					<img src='/images/3x3/cec.png'/>
 					<span className='caption'>Clockwise Edge Cycle</span>
 				</div>
 			</div>
 			<div className='row'>
 				<div className='card img-card'>
+					<img src='/images/3x3/ccwec.png'/>
 					<span className='caption'>Counter-Clockwise Edge Cycle</span>
 				</div>
 				<div className='card img-card'>
+					<img src='/images/3x3/solved.png'/>
 					<span className='caption'>Solved Cube</span>
 				</div>
 			</div>
