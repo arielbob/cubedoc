@@ -58,7 +58,7 @@ const Step1 = () => (
 
 const Step2 = () => (
 	<section className='step step2'>
-		<div className='img-card small-side'>
+		<div className='card img-card small-side'>
 			<img src='/images/3x3/cross.png'/>
 			<span className='caption'>Solved Cross</span>
 		</div>
@@ -89,7 +89,7 @@ const Step3 = () => (
 		</section>
 		<section className='small-side'>
 			<div className='row'>
-				<div className='img-card'>
+				<div className='card img-card'>
 					<img src='/images/3x3/fl.png'/>
 					<span className='caption'>Solved First Layer</span>
 				</div>
