@@ -191,6 +191,7 @@ a.link-main {
   border-radius: $card-border-radius;
   overflow: hidden;
 	text-align: center;
+	max-height: 260px;
   .caption {
     align-self: flex-end;
     color: $nav-background;
@@ -204,8 +205,9 @@ a.link-main {
 	& > img {
 		display: block;
 		max-width: 80%;
-		max-height: 80%;
+		height: auto;
 		margin: $img-padding auto $img-padding;
+		object-fit: contain;
 	}
 }
 
