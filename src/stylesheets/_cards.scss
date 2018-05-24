@@ -21,6 +21,9 @@
   &.red {
     .main-label {
       background-color: $main-red;
+			background-image: url('/images/cards/3x3.png');
+			background-repeat: no-repeat;
+			background-position: -160px 70px;
     }
     .content {
       border-color: $main-red;
@@ -34,6 +37,9 @@
   &.blue {
     .main-label {
       background-color: $main-blue;
+			background-image: url('/images/cards/4x4.png');
+			background-repeat: no-repeat;
+			background-position: -160px 70px;
     }
     .content {
       border-color: $main-blue;
@@ -86,6 +92,21 @@
       }
     }
   }
+}
+
+@media only screen and (max-width: $breakpoint) {
+	.main-card {
+		&.red {
+			.main-label {
+				background-position: -160px 10px;
+			}
+		}
+		&.blue {
+			.main-label {
+				background-position: -160px 10px;
+			}
+		}
+	}
 }
 
 a.link-main {
