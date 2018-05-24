@@ -13,6 +13,15 @@
   }
 }
 
+@media only screen and (max-width: $breakpoint) {
+	.title-big {
+		font-size: 12em;
+		letter-spacing: 0.12em;
+		line-height: 80px;
+		height: 130px;
+	}
+}
+
 .article-name {
   text-transform: uppercase;
   color: #292929;
