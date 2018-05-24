@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Uglify = require("uglifyjs-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-//TODO: add postcss-loader for autoprefixing in css files
+// FIXME: prefixes are not added in development mode? maybe this is fine
 
 const DEV = process.env.NODE_ENV !== 'production'
 
@@ -30,19 +30,19 @@ module.exports = {
       {
         test: /\.css$/,
         use: DEV ?
-          ['style-loader', 'css-loader'] :
+          ['style-loader', 'css-loader', 'postcss-loader'] :
           ExtractTextPlugin.extract({
             fallback: 'style-loader',
-            use: 'css-loader'
+            use: ['css-loader', 'postcss-loader']
           })
       },
       {
         test: /\.scss$/,
         use: DEV ?
-          ['style-loader', 'css-loader', 'sass-loader'] :
+          ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] :
           ExtractTextPlugin.extract({
             fallback: 'style-loader',
-            use: ['css-loader', 'sass-loader']
+            use: ['css-loader', 'postcss-loader', 'sass-loader']
           })
       },
       {

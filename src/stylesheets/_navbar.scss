@@ -19,14 +19,10 @@
   margin: 20px;
   float: left;
   font-size: 1.4em;
-  transition: transform 1s ease-out;
   a,
   a:visited {
     color: $text-black;
     text-decoration: none;
-  }
-  &:hover {
-    transform: rotate(1turn);
   }
 }
 

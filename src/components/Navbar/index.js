@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import DropdownListItem from '../DropdownListItem';
 
-//TODO: try implementing transitions with ReactCSSTransitionGroup
-//TODO: try flexbox
-//TODO: make responsive
-
 class Navbar extends React.Component {
   constructor() {
     super();
@@ -14,8 +10,6 @@ class Navbar extends React.Component {
     };
   }
 
-  // switch to toggleMenu = () => this.setState(state)?
-  // i think this needs a bleeding edge feature thing or whatever (i.e. it's not supported in this version of javascript)
   toggleMenu() {
     this.setState({toggled: !this.state.toggled});
   }
@@ -25,7 +19,7 @@ class Navbar extends React.Component {
       <section className="navigation">
         <div className="nav-container">
           <div className="brand">
-            <Link to='/' href="#!">🙂</Link>
+            <Link to='/' href="#!">CubeDoc</Link>
           </div>
           <nav>
             <div className='nav-mobile' onClick={() => {this.toggleMenu()}}>
