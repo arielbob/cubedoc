@@ -6,6 +6,7 @@ const Step1 = () => (
 	  <section className='small-side'>
       <div className='row'>
         <div className='card img-card'>
+					<img src='/images/4x4/keyhole.png'/>
           <span className='caption'>Keyhole Cross</span>
         </div>
       </div>
@@ -29,6 +30,7 @@ const Step2 = () => (
     <section className='small-side'>
       <div className='row'>
         <div className='card img-card'>
+					<img src='/images/4x4/centers.png'/>
           <span className='caption'>Solved Centers</span>
         </div>
       </div>
@@ -41,9 +43,11 @@ const Step3 = () => (
     <section className='small-side'>
       <div className='row'>
         <div className='card img-card'>
+					<img src='/images/4x4/oll-parity.png'/>
           <span className='caption'>OLL Parity</span>
         </div>
         <div className='card img-card'>
+					<img src='/images/4x4/pll-parity.png'/>
           <span className='caption'>PLL Parity</span>
         </div>
       </div>
