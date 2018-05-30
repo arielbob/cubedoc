@@ -12,11 +12,11 @@ const Pll = () => (
 					</section>
 					<div className='row wrap inline'>
 						<div className='card img-card'>
-							<img src='/images/3x3/pll_cw-edge.png'/>
+							<img src={require('../../img/3x3/pll_cw-edge.png')}/>
 							<span className='caption'>R2 U R U R' U' R' U' R' U R'</span>
 						</div>
 						<div className='card img-card'>
-							<img src='/images/3x3/pll_ccw-edge.png'/>
+							<img src={require('../../img/3x3/pll_ccw-edge.png')}/>
 							<span className='caption'>R U' R U R U R U' R' U' R2</span>
 						</div>
 					</div>
@@ -27,11 +27,11 @@ const Pll = () => (
 					</section>
 					<div className='row wrap inline'>
 						<div className='card img-card'>
-							<img src='/images/3x3/pll_cw-corner.png'/>
+							<img src={require('../../img/3x3/pll_cw-corner.png')}/>
 							<span className='caption'>x R' U R' D2 R U' R' D2 R2</span>
 						</div>
 						<div className='card img-card'>
-							<img src='/images/3x3/pll_ccw-corner.png'/>
+							<img src={require('../../img/3x3/pll_ccw-corner.png')}/>
 							<span className='caption'>x R2 D2 R U R' D2 R U' R</span>
 						</div>
 					</div>
@@ -43,15 +43,15 @@ const Pll = () => (
 				</section>
 				<div className='row wrap'>
 					<div className='card img-card'>
-						<img src='/images/3x3/pll_h-perm.png'/>
+						<img src={require('../../img/3x3/pll_h-perm.png')}/>
 						<span className='caption'>M2 U' M2 U2 M2 U' M2</span>
 					</div>
 					<div className='card img-card'>
-						<img src='/images/3x3/pll_z-perm.png'/>
+						<img src={require('../../img/3x3/pll_z-perm.png')}/>
 						<span className='caption'>M2 U M2 U M U2 M2 U2 M U2</span>
 					</div>
 					<div className='card img-card'>
-						<img src='/images/3x3/pll_e-perm.png'/>
+						<img src={require('../../img/3x3/pll_e-perm.png')}/>
 						<span className='caption'>x' R U' R' D R U R' D' R U R' D R U' R' D'</span>
 					</div>
 				</div>

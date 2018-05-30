@@ -22,7 +22,7 @@ const ScrollToTop = () => {
 export default class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename='/projects/cubedoc'>
         <div>
           <Route component={ScrollToTop} />
           <Navbar />

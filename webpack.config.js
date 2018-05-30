@@ -7,9 +7,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // FIXME: prefixes are not added in development mode? maybe this is fine
 
-const DEV = process.env.NODE_ENV !== 'production'
+const DEV = process.env.NODE_ENV.trim() !== 'production'
 
-module.exports = {
+const config = {
   entry: [
     'react-hot-loader/patch',
     './src/index.js'
@@ -17,7 +17,7 @@ module.exports = {
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: '/projects/cubedoc',
     filename: 'bundle.js'
   },
   devServer: {
@@ -49,7 +49,14 @@ module.exports = {
         test: /.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
-      }
+      },
+			{
+				test: /\.(jpe?g|png|gif|svg)$/,
+				loader: 'file-loader',
+				options: {
+					name: '/img/[name].[ext]'
+				}
+			}
     ]
   },
   plugins: [
@@ -60,13 +67,13 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    new ExtractTextPlugin('styles.css'),
-    new Uglify(),
-		new CopyWebpackPlugin([
-			{
-				from: 'src/images',
-				to: 'images'
-			}
-		])
+    new ExtractTextPlugin('style.css'),
+    new Uglify()
   ]
 };
+
+if (!DEV) config.plugins.push(new webpack.DefinePlugin({
+  'process.env.NODE_ENV': JSON.stringify('production')
+}))
+
+module.exports = config;

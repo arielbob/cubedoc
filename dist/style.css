@@ -580,6 +580,7 @@ button {
 .title-big {
   font-size: 20em;
   height: 210px;
+  letter-spacing: 0.2em;
   line-height: 130px;
   overflow: hidden;
   margin: 0; }
@@ -587,6 +588,13 @@ button {
     color: #ff6363; }
   .title-big.blue {
     color: #4683ec; }
+
+@media only screen and (max-width: 820px) {
+  .title-big {
+    font-size: 12em;
+    letter-spacing: 0.12em;
+    line-height: 80px;
+    height: 130px; } }
 
 .article-name {
   text-transform: uppercase;
@@ -773,13 +781,19 @@ nav {
   -webkit-transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
   transition: all 0.4s cubic-bezier(0, 0, 0.2, 1); }
   .main-card.red .main-label {
-    background-color: #ff6363; }
+    background-color: #ff6363;
+    background-image: url(/projects/cubedoc/img/3x3.png);
+    background-repeat: no-repeat;
+    background-position: -160px 70px; }
   .main-card.red .content {
     border-color: #ff6363; }
     .main-card.red .content .content-inner a {
       color: #ff6363; }
   .main-card.blue .main-label {
-    background-color: #4683ec; }
+    background-color: #4683ec;
+    background-image: url(/projects/cubedoc/img/4x4.png);
+    background-repeat: no-repeat;
+    background-position: -160px 70px; }
   .main-card.blue .content {
     border-color: #4683ec; }
     .main-card.blue .content .content-inner a {
@@ -822,6 +836,12 @@ nav {
         .main-card .content .content-inner .btn-main:hover {
           -webkit-transform: none;
                   transform: none; }
+
+@media only screen and (max-width: 820px) {
+  .main-card.red .main-label {
+    background-position: -160px 10px; }
+  .main-card.blue .main-label {
+    background-position: -160px 10px; } }
 
 a.link-main {
   display: inline-block;
@@ -917,7 +937,7 @@ a.link-main {
   border-radius: 6px;
   overflow: hidden;
   text-align: center;
-  max-height: 260px; }
+  max-height: 280px; }
   .img-card .caption {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -1089,4 +1109,4 @@ a.link-main {
       .link-info .link-block:not(:last-child) {
         margin-bottom: 20px; } }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

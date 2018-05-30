@@ -12,7 +12,7 @@ const Parity = () => (
 					</section>
           <div className='row wrap inline'>
 						<div className='card img-card'>
-							<img src='/images/4x4/parity_flip.png'/>
+							<img src={require('../../img/4x4/parity_flip.png')}/>
 							<span className='caption'>r U2 x r U2 r U2 r' U2 l U2 r' U2 r U2 r' U2 r'</span>
 						</div>
 					</div>
@@ -23,11 +23,11 @@ const Parity = () => (
 					</section>
           <div className='row wrap inline'>
 						<div className='card img-card'>
-							<img src='/images/4x4/parity_across.png'/>
+							<img src={require('../../img/4x4/parity_across.png')}/>
 							<span className='caption'>Rr2 U2 Rr2 u2 Rr2 U2 u2</span>
 						</div>
 						<div className='card img-card'>
-							<img src='/images/4x4/parity_diagonal.png'/>
+							<img src={require('../../img/4x4/parity_diagonal.png')}/>
 							<span className='caption'>x R2 F' Rr2 U2 Rr2 u2 Rr2 U2 u2 F R2</span>
 						</div>
 					</div>

@@ -21,7 +21,7 @@
   &.red {
     .main-label {
       background-color: $main-red;
-			background-image: url('/images/cards/3x3.png');
+			background-image: url(~../img/cards/3x3.png);
 			background-repeat: no-repeat;
 			background-position: -160px 70px;
     }
@@ -37,7 +37,7 @@
   &.blue {
     .main-label {
       background-color: $main-blue;
-			background-image: url('/images/cards/4x4.png');
+			background-image: url(~../img/cards/4x4.png);
 			background-repeat: no-repeat;
 			background-position: -160px 70px;
     }

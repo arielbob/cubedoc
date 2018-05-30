@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "set NODE_ENV=production && webpack",
     "start": "set NODE_ENV=development && webpack-dev-server --progress --colors --config ./webpack.config.js"
   },
-	"browserslist": [
-		"> 1%",
-		"last 2 versions"
-	],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -26,6 +26,7 @@
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.8.3",
     "postcss-loader": "^2.1.5",
