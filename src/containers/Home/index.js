@@ -1,6 +1,6 @@
 import React from 'react';
 import MainCard from '../../components/MainCard';
-import { Link } from 'react-router-dom';
+import MainLink from '../../components/MainLink';
 
 const Home = () => {
   return (
@@ -15,9 +15,9 @@ const Home = () => {
         color='red'
         link='/3x3/how-to-solve'
         >
-          <Link className='link-main' to='/3x3/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
+					<MainLink to='/3x3/oll'>OLL Algorithms</MainLink>
           <p>Learn various algorithms to orient the last layer of the 3x3.</p>
-          <Link className='link-main' to='/3x3/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
+					<MainLink to='/3x3/pll'>PLL Algorithms</MainLink>
           <p>A collection of different last layer permutation algorithms.</p>
       </MainCard>
       <MainCard
@@ -26,7 +26,7 @@ const Home = () => {
         color='blue'
         link='/4x4/yau-method'
         >
-          <Link className='link-main' to='/4x4/parity'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></Link>
+					<MainLink to='/4x4/parity'>Parity Algorithms</MainLink>
           <p>A collection of different algorithms to solve the 4x4's special cases.</p>
       </MainCard>
     </div>

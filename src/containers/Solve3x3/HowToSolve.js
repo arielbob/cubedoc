@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import MainLink from '../../components/MainLink';
 
 const Step1 = () => (
 	<section className='step step1'>
@@ -258,20 +258,20 @@ const Conclusion = () => (
 			<p>If you enjoyed solving the Rubik's cube, you may want to learn how to do it faster. The first two layers can be done intuitively using a method called F2L, and the last layer can be solved with fewer algorithms.</p>
 			<section className='link-info'>
 				<div className='link-block'>
-					<Link className='link-main' to='/3x3/oll'><span className='underline'></span>OLL Algorithms<span className='arrow'>&rarr;</span></Link>
+					<MainLink	to='/3x3/oll'>OLL Algorithms</MainLink>
 					<p>Learn various algorithms to orient the last layer of the 3x3 cube.</p>
 				</div>
 				<div className='link-block'>
-					<Link className='link-main' to='/3x3/pll'><span className='underline'></span>PLL Algorithms<span className='arrow'>&rarr;</span></Link>
+					<MainLink	to='/3x3/pll'>PLL Algorithms</MainLink>
 					<p>A collection of different last layer permutation algorithms.</p>
 				</div>
 				<div className='link-block'>
-					<Link className='link-main' to='/3x3/tips'><span className='underline'></span>Tips<span className='arrow'>&rarr;</span></Link>
+					<MainLink	to='/3x3/tips'>Tips</MainLink>
 					<p>General tips to help you in your 3x3 solves.</p>
 				</div>
 			</section>
 			<p>If you want more of a challenge, consider learning how to solve the 4x4 Rubik's cube.</p>
-			<Link className='link-main' to='/4x4/yau-method'><span className='underline'></span>Learn 4x4<span className='arrow'>&rarr;</span></Link>
+			<MainLink	to='/4x4/yau-method'>Learn 4x4</MainLink>
 		</section>
 	</section>
 );

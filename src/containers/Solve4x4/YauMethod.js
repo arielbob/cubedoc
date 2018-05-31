@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import MainLink from '../../components/MainLink';
 
 const Step1 = () => (
 	<section className='step step1'>
@@ -74,15 +74,15 @@ const Conclusion = () => (
       <h3>Other Pages</h3>
       <section className='link-info'>
         <div className='link-block'>
-          <Link className='link-main' to='/4x4/parity'><span className='underline'></span>Parity Algorithms<span className='arrow'>&rarr;</span></Link>
+					<MainLink to='/4x4/parity'>Parity Algorithms</MainLink>
           <p>A collection of various parity cases and alogrithms to solve them.</p>
         </div>
         <div className='link-block'>
-          <Link className='link-main' to='/4x4/tips'><span className='underline'></span>Tips<span className='arrow'>&rarr;</span></Link>
+					<MainLink to='/4x4/tips'>Tips</MainLink>
           <p>General tips to help you solve the 4x4 cube.</p>
         </div>
         <div className='link-block'>
-          <Link className='link-main' to='/3x3/how-to-solve'><span className='underline'></span>3x3<span className='arrow'>&rarr;</span></Link>
+					<MainLink to='/3x3/how-to-solve'>3x3</MainLink>
           <p>Review how to solve the 3x3 cube.</p>
         </div>
       </section>
