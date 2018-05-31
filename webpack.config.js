@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Uglify = require("uglifyjs-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // FIXME: prefixes are not added in development mode? maybe this is fine
 
@@ -67,6 +68,9 @@ const config = {
       inject: 'body'
     }),
     new ExtractTextPlugin('style.css'),
+		new CopyWebpackPlugin([
+			{ from: './src/img/favicon', to: './' }
+		]),
     new Uglify()
   ]
 };
