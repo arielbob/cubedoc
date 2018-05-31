@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Uglify = require("uglifyjs-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // FIXME: prefixes are not added in development mode? maybe this is fine
 
@@ -17,7 +16,7 @@ const config = {
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/projects/cubedoc',
+    publicPath: DEV ? '/' : '/projects/cubedoc',
     filename: 'bundle.js'
   },
   devServer: {
@@ -54,7 +53,7 @@ const config = {
 				test: /\.(jpe?g|png|gif|svg)$/,
 				loader: 'file-loader',
 				options: {
-					name: '/img/[name].[ext]'
+					name: (DEV ? '' : '/') + 'img/[name].[ext]'
 				}
 			}
     ]

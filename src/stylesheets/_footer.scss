@@ -1,0 +1,13 @@
+.footer {
+	height: $footer-height;
+	background-color: $nav-background;
+	max-width: $content-width;
+	text-align: center;
+	margin: 150px auto 0;
+	border-radius: 6px 6px 0 0;
+	padding: 26px;
+	p {
+		font-size: 0.9em;
+		margin: 0;
+	}
+}

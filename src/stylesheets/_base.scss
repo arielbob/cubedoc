@@ -4,6 +4,17 @@ html {
   box-sizing: border-box;
 }
 
+.wrapper {
+	// 20px = navbar margin, 70px = footer height
+	min-height: calc(100vh - 20px - 150px - 70px);
+}
+
+@media only screen and (max-width: $breakpoint) {
+  .wrapper {
+    min-height: calc(100vh - 150px - 70px);
+  }
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -25,6 +36,7 @@ body {
   line-height: 1.2;
   color: $text-black;
   overflow-y: scroll;
+	// margin-bottom: $footer-height;
 }
 
 h1 {
