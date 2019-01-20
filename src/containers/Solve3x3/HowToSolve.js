@@ -174,7 +174,7 @@ const Step5 = () => (
 						<span className='caption'>Dot Case</span>
 					</div>
 					<div className='card img-card'>
-						<img src={require('../../img/3x3/dot.png')}/>
+						<img src={require('../../img/3x3/line.png')}/>
 						<span className='caption'>Line Case</span>
 					</div>
 					<div className='card img-card'>
