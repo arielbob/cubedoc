@@ -11,10 +11,6 @@ import Home from '../containers/Home';
 import Solve3x3 from '../containers/Solve3x3';
 import Solve4x4 from '../containers/Solve4x4';
 
-//maybe move the stylesheet imports here?
-//can use render property instead of component for functional components (refactor dumb components that are using classes)
-//TODO: do server rendering with routes
-
 // const baseName = '/projects/cubedoc';
 const baseName = '/';
 
